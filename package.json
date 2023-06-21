@@ -3,6 +3,8 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
+    "serve:prod": "http-server -a localhost -c-1 dist/sample-pwa-app",
+    "start:prod": "ng build && npm run serve:prod",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
