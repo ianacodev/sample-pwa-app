@@ -1,5 +1,11 @@
 <div class="app">
-  <h1 class="app__heading">Sample PWA App</h1>
+  <header class="app__header">
+    <h1 class="app__heading">Sample PWA App</h1>
+    <button class="app__button" (click)="subscribeToNotifications()">
+      Subscribe
+    </button>
+  </header>
+
   <main>
     <router-outlet></router-outlet>
   </main>

@@ -4,6 +4,13 @@
   align-items: center;
   padding: 1rem;
 
+  &__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
   &__heading {
     margin: 0;
     padding: 1rem;
@@ -14,5 +21,14 @@
     border-radius: 1rem;
     margin-bottom: 1rem;
     text-align: center;
+  }
+
+  &__button {
+    outline: none;
+    border: 0;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 1px solid #808080;
+    box-shadow: 1px 1px 8px #808080;
   }
 }
