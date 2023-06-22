@@ -9,8 +9,7 @@ import { AppService } from './app.service';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit {
-  readonly VAPID_PUBLIC_KEY =
-    'BId1LdU7Kcq6UbvVDQmia-hKIChYJguBxb19eFToDCDh5bBIwjp-QnKkLOoK3L1j6w3WbVxF1PhMwyo-Cd-DMWU';
+  readonly VAPID_PUBLIC_KEY = '';
   constructor(private appService: AppService, private swPush: SwPush) {}
 
   ngOnInit(): void {
