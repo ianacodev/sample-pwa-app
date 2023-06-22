@@ -16,7 +16,9 @@ export class AppService {
 
   getDogBreeds() {
     const url = 'https://dog.ceo/api/breeds/list/all';
-    return this.http.get<any>(url).pipe(map((res) => Object.keys(res.message)));
+    return this.http
+      .get<any>(url)
+      .pipe(map((res) => Object.keys(res.message).slice(0, 6)));
   }
 
   logUpdate() {

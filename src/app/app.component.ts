@@ -8,11 +8,10 @@ import { AppService } from './app.service';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit {
-  title = 'sample-pwa-app';
-
   constructor(private appService: AppService) {}
 
   ngOnInit(): void {
     this.appService.logUpdate();
+    this.appService.promptUpdate();
   }
 }

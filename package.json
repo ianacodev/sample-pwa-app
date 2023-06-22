@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "serve:prod": "http-server -a localhost -c-1 dist/sample-pwa-app",
+    "serve:prod": "http-server -a localhost -c-1 dist/sample-pwa-app/browser",
     "serve:appshell:prod": "http-server -a localhost -c-1 dist/sample-pwa-app/browser",
     "start:prod": "ng build && npm run serve:prod",
     "start:appshell:prod": "ng run sample-pwa-app:app-shell:production && serve:appshell:prod",
