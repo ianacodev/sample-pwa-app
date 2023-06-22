@@ -1,0 +1,10 @@
+<div class="dog-breeds">
+  <h2 class="dog-breeds__heading">Dog Breeds</h2>
+  <table class="dog-breeds__table">
+    <body>
+      <tr *ngFor="let dogBreed of dogBreeds$ | async">
+        <td class="dog-breeds__table-td">{{ dogBreed }}</td>
+      </tr>
+    </body>
+  </table>
+</div>
